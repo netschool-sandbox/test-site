@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>テストサイト｜ネットスクール サンドボックス</title>
+  <title>東京校｜NS Sandbox（テストサイト）</title>
   <meta name="robots" content="noindex">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -13,25 +13,46 @@
       <span class="logo">NS Sandbox</span>
       <nav class="nav">
         <a href="#news">お知らせ</a>
-        <a href="#courses">講座紹介</a>
-        <a href="#contact">お問い合わせ</a>
+        <a href="#features">選ばれる理由</a>
+        <a href="#courses">講座</a>
+        <a href="#voice">先輩の声</a>
+        <a href="#faq">よくある質問</a>
+        <a href="#access">アクセス</a>
       </nav>
+      <a class="button button-small" href="#contact">資料請求</a>
     </div>
   </header>
 
+  <nav class="breadcrumb" aria-label="パンくずリスト">
+    <div class="container">
+      <a href="#">ホーム</a> &gt; <a href="#">校舎案内</a> &gt; <span>東京校</span>
+    </div>
+  </nav>
+
   <main>
     <section class="hero" id="hero">
-      <div class="container">
-        <p class="hero-label">共同編集テスト用ページ</p>
-        <h1 class="hero-title">言葉で頼めば、サイトが変わる。</h1>
-        <p class="hero-lead">このページは、Claude と GitHub・Vercel を使った共同編集フローを試すためのダミーサイトです。</p>
-        <a class="button" href="#courses">講座を見る</a>
+      <span class="blob blob-1" aria-hidden="true"></span>
+      <span class="blob blob-2" aria-hidden="true"></span>
+      <span class="blob blob-3" aria-hidden="true"></span>
+      <div class="container hero-inner">
+        <p class="hero-label">学生のための資格スクール｜東京校</p>
+        <h1 class="hero-title">空きコマで、<br><span class="marker">一生モノの資格</span>を。</h1>
+        <p class="hero-lead">授業のあと、駅から3分。自習室も相談も、学生ならではの「忙しい」に合わせて使えます。（テスト用のダミー文です）</p>
+        <ul class="badges">
+          <li>学生割引あり</li>
+          <li>スマホで復習OK</li>
+          <li>自習室使い放題</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="button" href="#contact">無料で資料をもらう</a>
+          <a class="button button-outline" href="#events">体験講義に行ってみる</a>
+        </div>
       </div>
     </section>
 
     <section class="section" id="news">
       <div class="container">
-        <h2 class="section-title">お知らせ</h2>
+        <h2 class="section-title"><span class="section-en">NEWS</span>お知らせ</h2>
         <ul class="news-list">
           <li><time datetime="2026-10-18">2026.10.18</time><span>佐藤が共同編集メンバーに加わりました。</span></li>
           <li><time datetime="2026-10-18">2026.10.18</time><span>テストサイトを公開しました。</span></li>
@@ -41,30 +62,144 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="courses">
+    <section class="section section-alt" id="features">
       <div class="container">
-        <h2 class="section-title">講座紹介</h2>
-        <div class="cards">
-          <article class="card">
-            <h3>税理士講座</h3>
-            <p>ダミーの説明文です。講座の特長をここに入れます。</p>
+        <h2 class="section-title"><span class="section-en">REASON</span>学生に選ばれる3つの理由</h2>
+        <div class="features">
+          <article class="feature">
+            <span class="feature-num">01</span>
+            <h3>授業のあとに通える</h3>
+            <p>夜の講義は19時スタート。大学の授業やバイトと両立しやすい時間割です。（ダミー）</p>
           </article>
-          <article class="card">
-            <h3>簿記講座</h3>
-            <p>ダミーの説明文です。講座の特長をここに入れます。</p>
+          <article class="feature">
+            <span class="feature-num">02</span>
+            <h3>学生割引でおトク</h3>
+            <p>学生証の提示で受講料が割引に。分割払いにも対応しています。（ダミー）</p>
           </article>
-          <article class="card">
-            <h3>USCPA講座</h3>
-            <p>ダミーの説明文です。講座の特長をここに入れます。</p>
+          <article class="feature">
+            <span class="feature-num">03</span>
+            <h3>就活でアピールできる</h3>
+            <p>エントリーシートに書ける資格を、在学中に。キャリア相談も受けられます。（ダミー）</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section" id="courses">
       <div class="container">
-        <h2 class="section-title">お問い合わせ</h2>
-        <p>テストサイトのため、お問い合わせは受け付けていません。</p>
+        <h2 class="section-title"><span class="section-en">COURSE</span>講座を選ぶ</h2>
+        <div class="cards">
+          <article class="card">
+            <span class="tag">はじめての人に</span>
+            <h3>簿記講座</h3>
+            <p>会計の基本がわかる、最初の一歩におすすめの講座です。（ダミー）</p>
+            <dl class="card-meta">
+              <dt>学習期間の目安</dt><dd>3か月〜</dd>
+              <dt>就活アピール度</dt><dd class="stars">★★★☆☆</dd>
+            </dl>
+          </article>
+          <article class="card card-pick">
+            <span class="tag">在学中に挑戦</span>
+            <h3>税理士講座</h3>
+            <p>科目ごとに合格を積み上げられるので、学生のうちから始める人が増えています。（ダミー）</p>
+            <dl class="card-meta">
+              <dt>学習期間の目安</dt><dd>1年〜</dd>
+              <dt>就活アピール度</dt><dd class="stars">★★★★★</dd>
+            </dl>
+          </article>
+          <article class="card">
+            <span class="tag">世界で働きたい人に</span>
+            <h3>USCPA講座</h3>
+            <p>英語と会計の両方を武器にしたい人向け。外資系志望にも。（ダミー）</p>
+            <dl class="card-meta">
+              <dt>学習期間の目安</dt><dd>1年〜</dd>
+              <dt>就活アピール度</dt><dd class="stars">★★★★☆</dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="voice">
+      <div class="container">
+        <h2 class="section-title"><span class="section-en">VOICE</span>先輩の声</h2>
+        <div class="voices">
+          <figure class="voice">
+            <blockquote>サークルと両立しながら、2年生の冬に簿記に合格できました。自習室が静かで集中できます。</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">A</span>大学2年・簿記講座（ダミー）</figcaption>
+          </figure>
+          <figure class="voice">
+            <blockquote>面接で「在学中に税理士科目に合格した」と話したら、すごく食いつかれました。</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">B</span>大学4年・税理士講座（ダミー）</figcaption>
+          </figure>
+          <figure class="voice">
+            <blockquote>講義はスマホで復習できるので、通学の電車がそのまま勉強時間になりました。</blockquote>
+            <figcaption><span class="avatar" aria-hidden="true">C</span>大学3年・USCPA講座（ダミー）</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container">
+        <h2 class="section-title"><span class="section-en">EVENT</span>説明会・体験講義</h2>
+        <table class="table">
+          <thead>
+            <tr><th>日程</th><th>内容</th><th>会場</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>11月 2日（月）19:00〜</td><td>簿記講座 説明会</td><td>東京校</td></tr>
+            <tr><td>11月 8日（日）13:00〜</td><td>税理士講座 体験講義</td><td>東京校</td></tr>
+            <tr><td>11月15日（日）10:00〜</td><td>USCPA講座 説明会</td><td>オンライン</td></tr>
+          </tbody>
+        </table>
+        <p class="note">※ 日程はすべてテスト用のダミーです。友達と一緒の参加もOK。</p>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <h2 class="section-title"><span class="section-en">FAQ</span>よくある質問</h2>
+        <div class="faq">
+          <details>
+            <summary>文系でも大丈夫ですか？</summary>
+            <p>はい。受講生の多くが文系出身です。数学の知識はほとんど必要ありません。（ダミー）</p>
+          </details>
+          <details>
+            <summary>テスト期間は休めますか？</summary>
+            <p>講義は録画で後から受けられるので、大学のテスト期間に合わせて調整できます。（ダミー）</p>
+          </details>
+          <details>
+            <summary>何年生から始めるのがいいですか？</summary>
+            <p>1〜2年生から始める人が多いですが、何年生からでも大丈夫です。説明会で相談してください。（ダミー）</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="access">
+      <div class="container">
+        <h2 class="section-title"><span class="section-en">ACCESS</span>アクセス</h2>
+        <div class="access">
+          <div class="map">地図（ダミー）</div>
+          <dl class="access-info">
+            <dt>住所</dt><dd>東京都〇〇区〇〇 1-2-3 〇〇ビル 5F（ダミー）</dd>
+            <dt>最寄駅</dt><dd>〇〇駅 北口より徒歩3分</dd>
+            <dt>自習室</dt><dd>平日 10:00〜22:00 ／ 土日 9:00〜20:00</dd>
+            <dt>電話</dt><dd>00-0000-0000（テスト用）</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container">
+        <h2 class="cta-title">まずは気軽に、話を聞きにきてね。</h2>
+        <p>テストサイトのため、実際のお申し込みは受け付けていません。</p>
+        <div class="hero-actions">
+          <a class="button button-yellow" href="#contact">無料で資料をもらう</a>
+          <a class="button button-outline" href="#events">体験講義に行ってみる</a>
+        </div>
       </div>
     </section>
   </main>
@@ -74,5 +209,10 @@
       <small>&copy; NS Sandbox（テスト用）</small>
     </div>
   </footer>
+
+  <div class="mobile-cta">
+    <a href="#contact">資料請求</a>
+    <a href="#events">体験講義</a>
+  </div>
 </body>
 </html>
