@@ -1,6 +1,7 @@
 :root {
   --color-primary: #0b3b7a;
   --color-primary-light: #e8eef7;
+  --color-primary-dark: #1f5fae;
   --color-accent: #e8590c;
   --color-text: #222;
   --color-muted: #666;
@@ -10,9 +11,12 @@
   --color-on-primary: #fff;
   --radius: 8px;
   --max-width: 1040px;
+  --ease: cubic-bezier(.2, .7, .2, 1);
 }
 
 * { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; }
 
 body {
   margin: 0;
@@ -191,6 +195,57 @@ a { color: var(--color-primary); }
 }
 
 .mobile-cta { display: none; }
+
+/* モーション */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: none; }
+}
+
+.hero-label,
+.hero-title,
+.hero-lead,
+.hero .hero-actions { animation: fade-up .8s var(--ease) both; }
+.hero-title { animation-delay: .15s; }
+.hero-lead { animation-delay: .3s; }
+.hero .hero-actions { animation-delay: .45s; }
+
+.hero {
+  background: linear-gradient(120deg, var(--color-primary), var(--color-primary-dark), var(--color-primary));
+  background-size: 200% 200%;
+  animation: hero-bg 12s ease-in-out infinite;
+}
+@keyframes hero-bg {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.button,
+.card,
+.feature,
+.nav a { transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s, color .25s; }
+.button:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgb(0 0 0 / .2); }
+.card:hover,
+.feature:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgb(11 59 122 / .12); }
+
+/* スクロールで下からふわっと表示（対応ブラウザのみ） */
+@supports (animation-timeline: view()) {
+  .section-title,
+  .news-list li,
+  .feature,
+  .card,
+  .table,
+  .access > * {
+    animation: fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
 
 @media (max-width: 800px) {
   .nav { display: none; }
